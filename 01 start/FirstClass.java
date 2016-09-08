@@ -10,7 +10,7 @@ public class FirstClass {
 	
 		// Типы данных - целый int, вещественный double 
 		int x = Integer.parseInt(args[0]);
-		int y = Double.parseDouble(args[1]);
+		double y = Double.parseDouble(args[1]);
 		
 		// арифметика: +, -, *, /, %. При этом на целых числах - целочисленное деление
 		double z = x + y;
