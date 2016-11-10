@@ -4,14 +4,17 @@ abstract class A {
 
 }
 
-public class MyMy {
+public class MyMy extends A{
 
 	public String f(int x) {
 		return "abc";
 	}
 
 	public static void main(String [] args) {
-		String s = (new MyMy()).f(1);
+		A a = new MyMy();
+		String s = (String) a.f(1);
+		MyMy a2 = new MyMy();
+		String s2 = a2.f(1);
 	}
 
 }
