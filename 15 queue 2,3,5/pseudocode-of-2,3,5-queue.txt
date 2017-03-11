@@ -1,0 +1,21 @@
+От 1 до N, которые делятся только на 2, 3, и 5.
+
+p = 2^k * 3^m * 5^n
+
+О2 <- 2
+О3 <- 3
+О5 <- 5
+
+prev = 1
+while (prev < n)
+	k = min(o2.peek(), o3.peek(), o5.peek());
+	удаляю из нужной очереди k
+	
+	if (k == prev) 
+		continue;
+	System.out.println(k);
+	o2.offer(2 * k);
+	o3.offer(3 * k);
+	o5.offer(5 * k);
+	prev = k
+	

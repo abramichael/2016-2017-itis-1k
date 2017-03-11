@@ -1,6 +1,6 @@
 
-public class Elem<T> {
-    private T value;
+public class Elem {
+    private int value;
     private Elem next;
 
     public Elem(){}
